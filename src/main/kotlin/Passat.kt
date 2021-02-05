@@ -1,4 +1,4 @@
-class Passat(override val silnik: String) : Samochod(){
+class Passat(override val silnik: Silnik) : Samochod(){
     override fun jedz() {
         println("samochód jedzie")
     }
@@ -24,5 +24,10 @@ class Passat(override val silnik: String) : Samochod(){
 
     private fun kierunkowskaz(){
         println("włączam kierunkowskaz")
+    }
+
+    override fun info() {
+        println("Passat")
+        super.info()
     }
 }

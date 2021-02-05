@@ -1,4 +1,4 @@
-class Bmw(override val silnik: String) : Samochod() {
+class Bmw(override val silnik: Silnik) : Samochod() {
     override fun jedz() {
         println("samochód jedzie")
     }
@@ -18,5 +18,10 @@ class Bmw(override val silnik: String) : Samochod() {
 
     private fun abs(){
         println("Abs nie działa, ktoś chyba wyciągnął bezpiecznik ...")
+    }
+
+    override fun info() {
+        println("BMW")
+        super.info()
     }
 }

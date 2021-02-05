@@ -1,12 +1,12 @@
 abstract class Samochod {
-    abstract val silnik: String
+    abstract val silnik: Silnik
 
     abstract fun jedz()
     abstract fun nacisnijHamulec()
     abstract fun skrec()
 
-    fun info(){
+    open fun info(){
         println("Podstawowe informacje")
-        println("Silnik: $silnik")
+        println("Silnik: ${silnik.info()}")
     }
 }
