@@ -3,9 +3,9 @@ class Passat(override val silnik: String) : Samochod(){
         println("samochód jedzie")
     }
 
-    override fun zatrzymajSie() {
+    override fun nacisnijHamulec() {
         hamulce()
-        println("samochód zatrzymuje się")
+        println("samochód zwalnia")
     }
 
     override fun skrec() {
@@ -14,7 +14,12 @@ class Passat(override val silnik: String) : Samochod(){
     }
 
     private fun hamulce(){
-        println("samochód włącza hamulce, ewentualnie abs")
+        println("samochód włącza hamulce")
+        abs()
+    }
+
+    private fun abs(){
+        println("Jeżeli trzeba włącza się abs")
     }
 
     private fun kierunkowskaz(){

@@ -2,7 +2,7 @@ abstract class Samochod {
     abstract val silnik: String
 
     abstract fun jedz()
-    abstract fun zatrzymajSie()
+    abstract fun nacisnijHamulec()
     abstract fun skrec()
 
     fun info(){
