@@ -13,6 +13,10 @@ class Passat(override val silnik: Silnik) : Samochod(){
         println("samochód skręca")
     }
 
+    override fun zaciagnijHamulecReczny() {
+        println("Zaciągnięto hamulec ręczny")
+    }
+
     private fun hamulce(){
         println("samochód włącza hamulce")
         abs()
