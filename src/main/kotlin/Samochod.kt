@@ -5,6 +5,8 @@ abstract class Samochod {
     abstract fun nacisnijHamulec()
     abstract fun skrec()
 
+    abstract fun zaciagnijHamulecReczny()
+
     open fun info(){
         println("Podstawowe informacje")
         println("Silnik: ${silnik.info()}")
