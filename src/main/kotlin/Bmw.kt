@@ -8,12 +8,17 @@ class Bmw(override val silnik: Silnik) : Samochod() {
     }
 
     override fun skrec() {
-
+        kierunkowskaz()
+        println("Bmw skręca")
     }
 
     private fun hamulce(){
         println("samochód włącza hamulce")
         abs()
+    }
+
+    private fun kierunkowskaz(){
+        println("...")
     }
 
     private fun abs(){
