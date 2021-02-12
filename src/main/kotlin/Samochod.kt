@@ -1,5 +1,6 @@
 abstract class Samochod {
     abstract val silnik: Silnik
+    abstract val skrzyniaBiegow: SkrzyniaBiegow
 
     abstract fun jedz()
     abstract fun nacisnijHamulec()
