@@ -1,4 +1,5 @@
-class Passat(override val silnik: Silnik) : Samochod(){
+class Passat(
+    override val silnik: Silnik, override val skrzyniaBiegow: SkrzyniaBiegow) : Samochod() {
     override fun jedz() {
         println("samochód jedzie")
     }
@@ -17,16 +18,16 @@ class Passat(override val silnik: Silnik) : Samochod(){
         println("Zaciągnięto hamulec ręczny")
     }
 
-    private fun hamulce(){
+    private fun hamulce() {
         println("samochód włącza hamulce")
         abs()
     }
 
-    private fun abs(){
+    private fun abs() {
         println("Jeżeli trzeba włącza się abs")
     }
 
-    private fun kierunkowskaz(){
+    private fun kierunkowskaz() {
         println("włączam kierunkowskaz")
     }
 
