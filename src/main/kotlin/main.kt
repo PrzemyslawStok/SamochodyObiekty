@@ -14,4 +14,5 @@ fun main() {
     val samochod3 = Subaru(Silnik("Benzyna", 350), SkrzyniaBiegow("Sekwencyjna"))
 
     samochod3.info()
+    samochod3.jedz()
 }
