@@ -9,4 +9,5 @@ fun main() {
     samochod2.jedz()
     samochod2.nacisnijHamulec()
     samochod2.skrec()
+    samochod2.info()
 }

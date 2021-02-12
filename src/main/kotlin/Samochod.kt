@@ -11,5 +11,6 @@ abstract class Samochod {
     open fun info(){
         println("Podstawowe informacje")
         println("Silnik: ${silnik.info()}")
+        println(skrzyniaBiegow.info())
     }
 }
