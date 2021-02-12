@@ -1,4 +1,4 @@
-class Bmw(override val silnik: Silnik) : Samochod() {
+class Bmw(override val silnik: Silnik, override val skrzyniaBiegow: SkrzyniaBiegow) : Samochod() {
     override fun jedz() {
         println("samochód jedzie")
     }
